@@ -1,4 +1,4 @@
-    %
+%
 % UCSD Dissertation Class
 %
 %   For the latest version go to:
