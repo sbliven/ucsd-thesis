@@ -191,6 +191,16 @@
 \usepackage{booktabs}  % Enables \toprule  http://ctan.org/pkg/array
 
 
+%% INCLUDING PDFS
+% Arguments:
+% - draft -- use a black box for rendering speed
+\usepackage{pdfpages}
+% Options for \includepdf and \includepdfmerge:
+% pages={1-2,3,4} or pages=- for all
+% frame -- outline with a black box
+% noautoscale -- don't resize pages, allowing for use with the graphicsx \scale command
+% Global options:
+\includepdfset{pages={-},noautoscale,fitpaper=false,pagecommand=\thispagestyle{plain},frame}
 
 \begin{document}
 
@@ -276,7 +286,9 @@ noon & medium & Croutons (Tomato Basil Soup \& Granny Smith Chicken Salad) \\
 \label{tab:analysis3}
 \end{table}
 
+\chapter{Structure Comparison}
 
+\includepdf{Bioinformatics_2010_Prlic_.pdf}
 
 %% APPENDIX
 \appendix
