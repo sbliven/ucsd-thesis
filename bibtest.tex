@@ -1,0 +1,21 @@
+\documentclass{ucsd}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+%Import the natbib package and sets a bibliography  and citation styles
+\usepackage{natbib}
+\def\newblock{\hskip .11em plus .33em minus .07em} %work-around for ucsd document class
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear}
+ 
+\begin{document}
+\chapter{One} 
+As discussed in \citet{Martin_1983}, nobody really understands brains at all \citep{Rilling_Insel_1999}. This paragraph should be double spaced so OGS is happy, but the bibliography should be single spaced to save trees.
+
+% Bibliography section
+\def\baselinestretch{1.0}\normalfont %work-around for increased spacing in ucsd class
+\bibliography{template}
+\def\baselinestretch{1.5}\normalfont %reset spacing for end stuff
+ 
+\end{document}
+
